@@ -6,8 +6,8 @@
                      <i class="fa fa-headphones" aria-hidden="true"></i>
                         <span>+91 9911172261</span>
                 </div>
-                <div class="col-sm-4">
-                    <ul>
+                <div class="col-sm-4 social-media-section">
+                    <ul class="social-media">
                         <li>
                             <i class="fa fa-facebook" aria-hidden="true"></i>
 
