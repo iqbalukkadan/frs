@@ -140,12 +140,12 @@ ul li{
     color:#d21850; 
 }
 .frs-slide-section{
-    min-height:540px !important;
+    min-height:650px !important;
     border-bottom:2px solid 0d3242; 
 
 }
 .frs-slide-section .rgba{
-    height:540px !important;
+    height:650px !important;
     background-color:rgba(0,0,0,.4);
     margin-top:-10px !important;
     
@@ -153,7 +153,7 @@ ul li{
 }
 .frs-slid-img{
     background-color:#4a7a92; 
-    background-image:url(../../dist/images/Courier-2.jpg);
+    background-image:url(../../dist/images/home-delivery.jpg);
     background-size:cover; 
     
 
@@ -162,7 +162,7 @@ ul li{
     margin-left:auto !important;
     margin-right:auto !important;
     float:none !important; 
-    margin-top:110px !important; 
+    margin-top:180px !important; 
 
 }
 .frs-slide-name span{
