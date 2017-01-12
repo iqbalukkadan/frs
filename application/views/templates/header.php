@@ -7,5 +7,5 @@
         <link rel="stylesheet" type="text/css" href="<?php echo CSSPATH ?>/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="<?php echo COMPONENTPATH ?>/bootstrap-3.3.7-dist/css/bootstrap.css">
     </head>
-    <body>
+        <body>
         

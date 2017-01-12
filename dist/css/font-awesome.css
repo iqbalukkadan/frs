@@ -289,6 +289,9 @@
 .fa-headphones:before {
   content: "\f025";
 }
+.head-phone{
+    font-size:18px; 
+}
 .fa-volume-off:before {
   content: "\f026";
 }
@@ -631,6 +634,9 @@
 .fa-facebook:before {
   content: "\f09a";
 }
+.fa-facebook:hover{
+    color: #2f2f69;
+}
 .fa-github:before {
   content: "\f09b";
 }
@@ -803,6 +809,9 @@
 }
 .fa-linkedin:before {
   content: "\f0e1";
+}
+.fa-linkedin:hover{
+    color: #029fc6;  
 }
 .fa-rotate-left:before,
 .fa-undo:before {
@@ -1209,6 +1218,9 @@
 .fa-youtube-play:before {
   content: "\f16a";
 }
+.fa-youtube-play:hover{
+    color: #ec0000; 
+}
 .fa-dropbox:before {
   content: "\f16b";
 }
@@ -1217,6 +1229,9 @@
 }
 .fa-instagram:before {
   content: "\f16d";
+}
+.fa-instagram:hover{
+    color: #f55151; 
 }
 .fa-flickr:before {
   content: "\f16e";
@@ -2173,6 +2188,9 @@
 .fa-google-plus-circle:before,
 .fa-google-plus-official:before {
   content: "\f2b3";
+}
+.fa-google-plus:hover{
+    color: #b54747; 
 }
 .fa-fa:before,
 .fa-font-awesome:before {
