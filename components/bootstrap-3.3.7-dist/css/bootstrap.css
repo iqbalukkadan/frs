@@ -1114,7 +1114,6 @@ figure {
 }
 img {
   vertical-align: middle;
-  float: right;
 }
 .img-responsive,
 .thumbnail > img,
@@ -1591,13 +1590,6 @@ pre code {
 @media (min-width: 768px) {
   .container {
     width: 750px;
-    height:85px !important; 
-  }
-}
-@media (min-width: 360px) {
-  .container {
-    width: 750px;
-    height:100px !important; 
   }
 }
 @media (min-width: 992px) {
@@ -1625,8 +1617,6 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  float:left; 
- 
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -1656,7 +1646,7 @@ pre code {
   width: 41.66666667%;
 }
 .col-xs-4 {
-  width: 26.33333333%;
+  width: 33.33333333%;
 }
 .col-xs-3 {
   width: 25%;
@@ -1786,7 +1776,7 @@ pre code {
 }
 @media (min-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    
+    float: left;
   }
   .col-sm-12 {
     width: 100%;
@@ -1805,20 +1795,15 @@ pre code {
   }
   .col-sm-7 {
     width: 58.33333333%;
-    float:left !important; 
   }
   .col-sm-6 {
     width: 50%;
   }
   .col-sm-5 {
     width: 41.66666667%;
-    height: 45px;
-    top: 18px;
-    
   }
   .col-sm-4 {
-    width: 31.33333333%;
-    
+    width: 33.33333333%;
   }
   .col-sm-3 {
     width: 25%;
@@ -1946,9 +1931,6 @@ pre code {
   .col-sm-offset-0 {
     margin-left: 0;
   }
-  .top-bar{
-      height:40px !important; 
-  }
 }
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
@@ -1956,7 +1938,6 @@ pre code {
   }
   .col-md-12 {
     width: 100%;
-    height: 80px;
   }
   .col-md-11 {
     width: 91.66666667%;
@@ -2108,7 +2089,6 @@ pre code {
   .col-md-offset-0 {
     margin-left: 0;
   }
-  
 }
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -2267,18 +2247,7 @@ pre code {
   .col-lg-offset-0 {
     margin-left: 0;
   }
-  
 }
-.navbar-nav > li > a {
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
-    font-size:15px!important;
-    font-weight:bold!important;
-    font-family: 'nexa-light';
-    padding-right:20px !important;
-    transition: all 0.9s ease 0s;
-    
-  }
 table {
   background-color: transparent;
 }
@@ -2992,7 +2961,6 @@ select[multiple].input-lg {
   .form-inline .has-feedback .form-control-feedback {
     top: 0;
   }
- 
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox,
@@ -3031,7 +2999,6 @@ select[multiple].input-lg {
     padding-top: 6px;
     font-size: 12px;
   }
-  
 }
 .btn {
   display: inline-block;
@@ -3508,7 +3475,6 @@ input[type="button"].btn-block {
 }
 .collapse {
   display: none;
-  
 }
 .collapse.in {
   display: block;
@@ -4009,7 +3975,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-
 }
 .nav > li {
   position: relative;
@@ -4018,12 +3983,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  margin-left:10px; 
+  padding: 10px 15px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  color: #f9980f;
+  background-color: #eee;
 }
 .nav > li.disabled > a {
   color: #777;
@@ -4388,23 +4353,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float:right;
+    float: left;
     margin: 0;
   }
   .navbar-nav > li {
-    float:left;
+    float: left;
   }
   .navbar-nav > li > a {
-      
-     
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size:14px;
-    font-weight:bold;
-    font-family: 'nexa-light';
-    padding-right:20px;
-    transition: all 0.9s ease 0s;
-    
   }
 }
 .navbar-form {
@@ -5019,8 +4976,8 @@ a.badge:focus {
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
-/*  padding-right: 15px;
-  padding-left: 15px;*/
+  padding-right: 15px;
+  padding-left: 15px;
   border-radius: 6px;
 }
 .jumbotron .container {

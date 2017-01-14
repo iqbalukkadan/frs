@@ -46,7 +46,7 @@
                             </ul>
                         </div>
                         <div class="col-sm-6">
-                            <button class="join-botton">Join Now</button>
+                            <a href="#enquire" class="join-botton">Enquire</a>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
             <div class="container-fluid nav-head margin-padng-none animated">
                 <div class="container container-nav-head ">
                     <div class="col-sm-3 frs-head-logo margin-padng-none">
-                        <img src="<?php echo IMAGEPATH ?>/logo/frs-logo.png">
+                        <img src="<?php echo IMAGEPATH ?>/logo/frs.png">
                         <!--            logo image-->
                     </div>
                     <div class="col-sm-9 heght-auto">

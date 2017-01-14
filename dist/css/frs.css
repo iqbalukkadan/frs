@@ -67,6 +67,22 @@ body,html{
 .heght-auto{
     height:auto; 
 }
+.theme-bg-gray{
+    background: #efefef;
+}
+.theme-bg-white{
+    background: #fff;
+}
+.theme-bg-green{
+    background: #037b85;
+}
+.why-img-1,.why-img-2,.why-img-3{
+    height: 200px;
+    width: 100%;
+    background: url(../images/why/why-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
 a{
     text-decoration:none; 
 }
@@ -83,7 +99,7 @@ a:hover{
 
 }
 .section{
-    padding: 100px 50px 50px 50px;
+    padding: 100px 50px 50px 50px !important;
 }
 .section-title span{
     color: #474747;
@@ -148,13 +164,15 @@ ul li{
     color:#5f727f;
 }
 .join-botton{
+    display: block;
+    text-align: center;
     width:80px;
-    height:28px;
+    height:30px;
     border:none;
+    line-height:30px;
     border-radius:3px; 
     float:right; 
     color: #f0f3f2;
-    line-height:23px;
     vertical-align:middle;
     background-color: #434364; 
     margin-top:10px;
@@ -228,6 +246,9 @@ header{
 .col-sm-width-50{
     width: 50%;
 }
+.col-sm-width-60{
+    width: 60%;
+}
 .home-slider-bg{
     background: url(../images/home-slider-bg.jpg);
     background-size: cover;
@@ -237,6 +258,12 @@ header{
     height: 600px;
     margin-top: 125px;
     position: relative;
+}
+.both-center-slider{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .both-center{
     position: absolute;
@@ -254,8 +281,14 @@ header{
 .font-max{
     font-size: 30px !important;
 }
+.font-maxx{
+    font-size: 40px !important; 
+}
+.font-min{
+    font-size: 15px;
+}
 .theme-white{
-    color: #fff;
+    color: #fff !important;
 }
 .width-60{
     width:60%;
@@ -290,8 +323,22 @@ header{
     border-bottom:2px solid #0d3242; 
 
 }
+
+.no-padding-h{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.padding-top-avg{
+    padding-top: 20px;
+}
+.padding-bottom-avg{
+    padding-bottom: 20px;
+}
 .padding-min{
     padding: 15px;
+}
+.padding-avg-right{
+    padding-right: 20px;
 }
 .padding-avg{
     padding: 20px;
@@ -303,8 +350,8 @@ header{
     padding-bottom: 40px;
 }
 .slider-bottom-arrow{
-    width: 40px;
-    height: 70px;
+    width: 30px;
+    height: 50px;
     border: 2px solid #fff;
     border-radius: 55px;
     margin: auto;
@@ -312,23 +359,95 @@ header{
 }
 .slider-bottom-arrow i{
     position: absolute;
-    top: 32px;
-    left: 12px;
+    top: 20px;
+    left: 9px;
 }
-.relative{position:relative}
+
+.relative{
+    position: relative !important;
+}
 .frs-slide-section .rgba{
     height:650px !important;
     background-color:rgba(0,0,0,.4);
     margin-top:-10px !important;
-
-
 }
+/*/slider*/
+
+/*why*/
 .frs-slid-img{
     background-color:#4a7a92; 
     background-image:url(../../dist/images/home-delivery.jpg);
     background-size:cover; 
-
-
+}
+.why-content h3{
+    padding-top: 20px !important;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d1cfcf !important;
+}
+.why-content p{
+    text-align: justify;
+}
+/*/why*/
+.theme-bg-enquire
+{
+    background: url(../images/enquire/enquire-bg.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 400px;
+}
+.cover-black{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+}
+/*enquire*/
+.enquire-img{
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.full-height{
+    height: 100%;
+}
+/*enquire*/
+.enquire-b{
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #037b85;
+    display: block;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    transition: all .5s;
+    text-transform: uppercase;   
+}
+.enquire-b:hover{
+    width: 240px
+}
+a:focus,a:hover,a:active{
+    color: #fff !important;
+}
+.enquire-form input,.enquire-form textArea{
+    padding: 8px 13px;
+    width: 100%;
+    border: 1px solid #0b2937;
+}
+.send-b{
+    width: 200px;
+    height: 40px;
+    background-color: #037b85;
+    display: block;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    transition: all .5s;
+    text-transform: uppercase;   
 }
 .frs-slide-name{
     margin-left:auto !important;
