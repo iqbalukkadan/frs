@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 defined('BASEPATH') OR exit('No direct script access allowed');
-define('BASE_URL', "http://frs.localhost:8080/");
+define('BASE_URL', "http://localhost/frs-courier");
 defined('IMAGEPATH') OR define('IMAGEPATH', BASE_URL . '/dist/images');
 defined('CSSPATH') OR define('CSSPATH', BASE_URL . '/dist/css');
 defined('SCRIPTPATH') OR define('SCRIPTPATH', BASE_URL . '/dist/js');

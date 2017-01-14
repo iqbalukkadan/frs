@@ -647,3 +647,70 @@ a:focus,a:hover,a:active{
     color: #767575;
     text-align:center; 
 }
+/*
+footer*/
+.foot-contant li{
+    font-size:14px;
+    font-weight:400;
+    color: #767474;
+    width:100%;    
+    
+}
+.foot-contant h5{
+    font-size:16px;
+    font-weight:500;
+    margin-top:20px; 
+    color:#f60; 
+}
+.contnt-dots{
+   width:12px;
+   height:12px;
+   border-radius:50%;
+   background-color: #ffffff; 
+   float:left; 
+   margin-right:5px; 
+}
+.footer-background{
+    background-color:#083747;
+    height:310px; 
+    border-bottom:2px solid #114557;
+}
+.foot-right-brdr-ht{
+   height:228px; 
+   margin-top:50px !important;
+   border-right:2px solid #ffffff; 
+}
+.foot-scn-color{
+    background-color:#063241; 
+}
+.foot-scn-ht{
+    height:100%;
+    
+}
+.border-none{
+    height:228px; 
+   margin-top:50px !important;
+   
+}
+.copyritw-ht{
+    height:50px; 
+}
+.foot-logo{
+    margin-top:70px; 
+}
+.foot-sddress-mrgn{
+    margin-top:15px; 
+}
+.foot-logo img{
+  background-size:cover;
+  display:block;
+  height:60px;
+}
+.form li{
+  font-size:14px;
+  color: #ffffff;
+}
+.foot-sddress h5{
+   color:#f60;
+    
+}
