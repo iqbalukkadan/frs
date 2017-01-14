@@ -1,89 +1,31 @@
-<header> 
-    <!--site top head begin-->
-    <div class="container-fluid  top-area">
-        <div class="container container-head">
-            <div class="col-sm-12 margin-padng-none">
-                <div class="col-sm-2 contact-nomber margin-padng-none">
-                    <i class="fa fa-headphones head-phone"  aria-hidden="true"></i>
-                    <span>+91 9911172261</span>
-                </div>
-                <div class="col-sm-4 social-media-section">
-                    <ul class="social-media">
-                        <li>
-                            <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
 
-                        </li>
-                        <li>
-                            <a href="#">   <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-
-                        </li>
-                        <li>
-                            <a href="#">   <i class="fa fa-instagram" aria-hidden="true"></i></a>
-
-                        </li>
-                        <li>
-                            <a href="#">   <i class="fa fa-google-plus" aria-hidden="true"></i></a>
-
-                        </li>
-                        <li>
-                            <a href="#">   <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-
-                        </li>
-
-
-                    </ul>
-                </div>
-                <div class="col-sm-6">
-                    <button class="join-botton">Join Now</button>
-                </div>
+<section class="home-slider home-slider-bg relative">
+    <div class="both-center col-sm-width-50">
+        <h1 class="col-md-12 text-center theme-white text-uppercase font-max padding-min no-margin auto-height font-bold-min"> Track Your Box</h1>
+        <div class="col-md-12 auto-height">
+            <input type="text" class="col-md-8 search" placeholder="Your Reference Number"/><button class="col-md-4 b-search">Search</button>
+        </div>
+        <p class="theme-white text-center col-md-12 padding-min font-Regular">When you ship with FRS– you’re shipping with specialists in international shipping and courier delivery services! With our wide range of express parcel and package services, along with shipping and tracking solutions to fit your needs!.</p>
+        <div class="col-md-12 padding-max">
+            <div class="slider-bottom-arrow">
+                <i class="fa fa-angle-double-down theme-white font-avg  animated slideInDown infinite" aria-hidden="true"></i>
             </div>
         </div>
     </div>
-</header> 
-<!--  top head end-->
-<header>
-    <!--    nav head begin-->
-    <div class="container-fluid nav-head margin-padng-none">
-        <div class="container container-nav-head ">
-            <div class="col-sm-3 frs-head-logo margin-padng-none">
-                <img src="<?php echo IMAGEPATH ?>/logo/frs-logo.png">
-                <!--            logo image-->
-            </div>
-            <div class="col-sm-9 heght-auto">
-                <!--            frs menu-->
-                <ul class="col-sm-8 heght-auto header-nav">
-                    <li class="col-sm-2 header-active"><a class="active-hme" href="#">Home</a></li>
-                    <li class="col-sm-2 header-active"><a href="#">Services</a></li>
-                    <li class="col-sm-2 header-active"><a href="#">About</a></li>
-                    <li class="col-sm-2 header-active"><a href="#">Contact</a></li>
-                </ul>
-
-            </div>
-        </div>
-    </div>
-</header>
-<!--nav  head section end-->
-<section>
-    <!--    heade image section begin-->
-    <div class="container-fluid margin-padng-none frs-slide-section frs-slid-img">
-        <div class="col-sm-12 rgba margin-padng-none">
-            <div class="container frs-slide-section">
-                <div class="col-sm-12 margin-padng-none  heght-auto frs-slide-name">
-                    <h1><span>FRS</span>COURIER SERVICE</h1>
-
-                    <div class=" heght-auto margin-padng-none tracking-section">
-                        <input type="text" class="track-input">
-                        <button class="track-no-button">TRACK</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>  
 </section>
-
+<section class="section">
+    <div class="container">
+        <div class="col-sm-11 center text-center font-ExtraLight">
+            <h2 class="section-title">
+                What you need to know <span>about FRS</span> 
+            </h2>
+            <div class="border"></div>
+        </div>
+    </div>
+</section>
 <!--header image section end -->
 <section class="about-hegt">
-<!--    about section-->
+    <!--    about section-->
     <div class="container-fluid margin-padng-none about-rgba">
         <div class="container">
             <div class="col-sm-9 margin-auto about-section about-head-heght">
@@ -98,12 +40,12 @@
             </div>
         </div>
     </div>
-<!--about section end-->
+    <!--about section end-->
 </section>
 
 
 <section class="service-section">
- 
+
     <!--    service section-->
     <div class="container-fluid wlcm-ht service-rgba">
         <div class="container">
@@ -118,12 +60,12 @@
                         Phasellus sit amet trisue 
                         ligula iaculis leo at nibh suscipit ultricierdum 
                         talesuada fames ac ante.</p>
-                    
+
                 </div>
             </div>
             <div class="col-sm-4 margin-top">
                 <div class="col-sm-12 about-site-img">
-                   <img src="<?php echo IMAGEPATH ?>/frs-service.jpg">
+                    <img src="<?php echo IMAGEPATH ?>/frs-service.jpg">
                 </div>
                 <div class="col-sm-12 wlcome-sction-cntant">
                     <h4>About Our Company</h4>
@@ -131,7 +73,7 @@
                         Phasellus sit amet trisue 
                         ligula iaculis leo at nibh suscipit ultricierdum 
                         talesuada fames ac ante.</p>
-                   
+
                 </div>
             </div>
             <div class="col-sm-4 margin-top">
@@ -144,14 +86,14 @@
                         Phasellus sit amet trisue 
                         ligula iaculis leo at nibh suscipit ultricierdum 
                         talesuada fames ac ante.</p>
-                    
+
                 </div>
             </div>
         </div>
     </div>
-<!--service section end-->
+    <!--service section end-->
 </section>
-    </div>
+</div>
 </section>
 
 
