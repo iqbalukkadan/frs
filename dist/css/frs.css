@@ -425,19 +425,42 @@ header{
     transition: all .5s;
     text-transform: uppercase;   
 }
+
+
 .enquire-b:hover{
     width: 240px
 }
 a:focus,a:hover,a:active{
     color: #fff !important;
 }
+.enquire-form{
+    background-image:url(../../dist/images/CALL-frs.jpg);
+     background-size:cover;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+     background-position: 0px 0px;
+     background-attachment: fixed;
+     
+}
+.equer-rgba{
+  background-color:rgba(0,0,0,.6); 
+  width:100%; 
+}
 .enquire-form input,.enquire-form textArea{
     padding: 8px 13px;
     width: 100%;
-    border: 1px solid #0b2937;
+    border-radius:3px; 
+    border: 1px solid #037b85;
+    background: rgba(255,255,255,.8);
+    
 }
+
+.enquire-form textArea{
+    height:87px; 
+}
+
 .send-b{
-    width: 200px;
+    width: 425px;
     height: 40px;
     background-color: #037b85;
     display: block;
@@ -447,7 +470,23 @@ a:focus,a:hover,a:active{
     color: #fff;
     font-size: 16px;
     transition: all .5s;
-    text-transform: uppercase;   
+    text-transform: uppercase;
+    border:2px solid #037b85;
+    
+}
+.send-b:hover{
+    background-color:#fff; 
+    border:2px solid #037b85;
+    color:#037b85 !important;  
+}
+
+
+
+.equer-img img{
+    background-size:cover; 
+    height:430px;
+    margin-top:20px; 
+    
 }
 .frs-slide-name{
     margin-left:auto !important;
@@ -579,6 +618,10 @@ a:focus,a:hover,a:active{
 .no-padding{
     padding: 0px !important;
 }
+.margin-top-bttm{
+    margin-top:70px; 
+    margin-bottom:70px; 
+}
 .button-left{
     margin-left:70px; 
 }
@@ -652,10 +695,17 @@ footer*/
 .foot-contant li{
     font-size:14px;
     font-weight:400;
-    color: #767474;
-    width:100%;    
+    color: #ffffff;
+    width:100%; 
     
 }
+.foot-contant li a{
+    color: #ffffff;
+}
+.foot-contant li a:hover{
+    color:#f60 !important; 
+}
+
 .foot-contant h5{
     font-size:16px;
     font-weight:500;
@@ -672,13 +722,15 @@ footer*/
 }
 .footer-background{
     background-color:#083747;
-    height:310px; 
     border-bottom:2px solid #114557;
+    height:60px; 
 }
 .foot-right-brdr-ht{
-   height:228px; 
-   margin-top:50px !important;
-   border-right:2px solid #ffffff; 
+   height:190px; 
+   margin-top:15px !important;
+   border-left:2px solid #ffffff; 
+   float:right !important; 
+  
 }
 .foot-scn-color{
     background-color:#063241; 
@@ -696,15 +748,23 @@ footer*/
     height:50px; 
 }
 .foot-logo{
-    margin-top:70px; 
+    margin-top:12px; 
 }
 .foot-sddress-mrgn{
-    margin-top:15px; 
+    margin-top:20px; 
 }
 .foot-logo img{
   background-size:cover;
   display:block;
-  height:60px;
+  height:35px;
+}
+.foot-cpy-rite span{
+   line-height:60px;
+   vertical-align:middle;
+   color: #ffffff;
+   font-size:12px; 
+   float:right; 
+   
 }
 .form li{
   font-size:14px;
@@ -714,3 +774,26 @@ footer*/
    color:#f60;
     
 }
+.border-right{
+    margin-top:15px; 
+    border-right:2px solid #ffffff;  
+}
+
+.srol-top{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background-color:#083747;
+  margin-top:#ffffff;
+  margin-top:-20px; 
+  color: #ffffff;
+  font-size:24px;
+  text-align:center; 
+ padding-top:8px; 
+margin-left:80%;  
+  
+}
+.srol-top:hover{
+    font-size:27px; 
+    color:#90ebed; 
+}  

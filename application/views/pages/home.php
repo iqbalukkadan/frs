@@ -122,11 +122,12 @@
         <img class="enquire-img" src="<?Php echo IMAGEPATH ?>/enquire/enquire-bg-2.png">
     </div>
 </section>
-<section class="section enquire-form" id="enquire">
-    <div class="container">
-        <div class="col-sm-4">
+<section class="section enquire-form section-color no-padding" id="enquire">
+    <div class="container-fluid no-padding equer-rgba">
+        <div class="col-sm-7 section margin-top-bttm">
+        <div class="col-sm-8 margin-auto">
             <div class="form-group">
-                <input type="text" placeholder="Name"/>
+                <input type="text" placeholder="Name" class="equer">
             </div>
 
             <div class="form-group">
@@ -134,18 +135,25 @@
             </div>
 
             <div class="form-group">
-                <input type="text" placeholder="Contact Number"/>
+                <input type="text" placeholder="Contact Number" />
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="form-group">
+        
+          <div class="form-group">
                 <textarea placeholder="Enquiry Message"></textarea>
             </div>
             <div class="col-xs-12 no-padding">
-                <a href="#" class="send-b font-bold-min">Enquire Rate</a>
+                <a href="#" class="send-b font-bold-min ">Enquire Rate</a>
+            </div>
             </div>
         </div>
-    </div>
+       
+        <div class="col-sm-5 no-padding margin-top-bttm">
+            <div class="col-sm-12 equer-img no-padding">
+                <img src="<?php echo IMAGEPATH ?>/about-map1.png" class="img-responsive"/>
+            </div>
+        </div>
+         </div>
+   
 </section>
 
 
