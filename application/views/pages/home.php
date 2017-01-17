@@ -87,7 +87,7 @@
                 <div class="why-img-2"></div>    
                 <h3 class="col-xs-12 no-padding-h no-margin font-ExtraLight"><i class="fa fa-ship padding-avg-right" aria-hidden="true"></i>tracking facility </h3>
                 <p class="font-ExtraLight padding-top-avg col-sm-12 no-padding-h">
-                    FRS Courier Service is commited to providing you the best service in the indestri 24/7 ,365 days a year, To accomplish this we have established a customer service  team & delivery teams to responding to your needs and delivering superior value..
+                    ,365 days a year, To accomplish this we have established a customer service  team & delivery teams to responding to your needs and delivering superior value..
                 </p>
             </div>
             <div class="col-sm-3 why-content padding-max">

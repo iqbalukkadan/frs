@@ -86,21 +86,21 @@ body,html{
 .why-img-2{
     height: 200px;
     width: 100%;
-    background-image: url(../../dist/images/why/);
+    background-image: url(../../dist/images/why/truck-frs.jpg);
     background-size: cover;
     background-position: center;  
 }
 .why-img-3{
     height: 200px;
     width: 100%;
-    background-image: url(../../dist/images/why/-courier-24-7.jpg);
+    background-image: url(../../dist/images/why/phone.jpg);
     background-size: cover;
     background-position: center;
 }
 .why-img-4{
    height: 200px;
     width: 100%;
-    background-image: url(../../dist/images/why/);
+    background-image: url(../../dist/images/why/fat-wallet.jpg);
     background-size: cover;
     background-position: center;  
 }
