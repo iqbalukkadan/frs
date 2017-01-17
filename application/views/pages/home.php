@@ -144,7 +144,7 @@
           <div class="form-group">
                 <textarea placeholder="Enquiry Message"></textarea>
             </div>
-            <div class="col-xs-12 no-padding">
+            <div class=" no-padding">
                 <a href="#" class="send-b font-bold-min ">Enquire Rate</a>
             </div>
             </div>
