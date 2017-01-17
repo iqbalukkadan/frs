@@ -68,35 +68,38 @@
             <h2 class="section-title">
                 Why <span class="theme-white">FRS</span> 
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis varius cursus. Sed rhoncus, nisl non maximus molestie, erat quam tincidunt orci, fermentum fermentum risus enim ut nisl. </p>
+            <p>It's a big world out there with our international and domestic 
+                express delivery service FRS will keep you get the most from it,
+                Unlike other courier companies we deliver packages of one voliume in 
+                the shortest duration from your doorstep to your family and friends </p>
             <div class="border"></div>
 
         </div>
         <div class="col-sm-12 padding-max theme-bg-white">
             <div class="col-sm-3 why-content padding-max">
                 <div class="why-img-1"></div>    
-                <h3 class="col-xs-12 no-padding-h no-margin font-ExtraLight"><i class="fa fa-ship padding-avg-right" aria-hidden="true"></i> Fast & snappy</h3>
+                <h3 class="col-xs-12 no-padding-h no-margin font-ExtraLight"><i class="fa fa-ship padding-avg-right" aria-hidden="true"></i>Compleat Care</h3>
                 <p class="font-ExtraLight padding-top-avg col-sm-12 no-padding-h">
-                    FRS Courier Service is the courier service that can meet and exceed your expectations. We are an employee owned and operated company making it happen on the road in the New Delhi Bay Area.
+                    We Assure complete and Genarated care for your each and every packages..No matter it's simple or heavy we treat safely & securely because your satisfaction is our priority
                 </p>
             </div>
             <div class="col-sm-3 why-content padding-max">
-                <div class="why-img-1"></div>    
-                <h3 class="col-xs-12 no-padding-h no-margin font-ExtraLight"><i class="fa fa-ship padding-avg-right" aria-hidden="true"></i> Fast & snappy</h3>
+                <div class="why-img-2"></div>    
+                <h3 class="col-xs-12 no-padding-h no-margin font-ExtraLight"><i class="fa fa-ship padding-avg-right" aria-hidden="true"></i>tracking facility </h3>
                 <p class="font-ExtraLight padding-top-avg col-sm-12 no-padding-h">
-                    FRS Courier Service is the courier service that can meet and exceed your expectations. We are an employee owned and operated company making it happen on the road in the New Delhi Bay Area.
+                    FRS Courier Service is commited to providing you the best service in the indestri 24/7 ,365 days a year, To accomplish this we have established a customer service  team & delivery teams to responding to your needs and delivering superior value..
                 </p>
             </div>
             <div class="col-sm-3 why-content padding-max">
-                <div class="why-img-1"></div>    
-                <h3 class="col-xs-12 no-padding-h no-margin font-ExtraLight"><i class="fa fa-ship padding-avg-right" aria-hidden="true"></i> Fast & snappy</h3>
+                <div class="why-img-3"></div>    
+                <h3 class="col-xs-12 no-padding-h no-margin font-ExtraLight"><i class="fa fa-ship padding-avg-right" aria-hidden="true"></i>24/7 services</h3>
                 <p class="font-ExtraLight padding-top-avg col-sm-12 no-padding-h">
-                    FRS Courier Service is the courier service that can meet and exceed your expectations. We are an employee owned and operated company making it happen on the road in the New Delhi Bay Area.
+                    FRS Courier Service is commited to providing you the best service in the indestri 24/7 ,365 days a year, To accomplish this we have established a customer service  team & delivery teams to responding to your needs and delivering superior value..
                 </p>
             </div>
             <div class="col-sm-3 why-content padding-max">
-                <div class="why-img-1"></div>    
-                <h3 class="col-xs-12 no-padding-h no-margin font-ExtraLight"><i class="fa fa-ship padding-avg-right" aria-hidden="true"></i> Fast & snappy</h3>
+                <div class="why-img-4"></div>    
+                <h3 class="col-xs-12 no-padding-h no-margin font-ExtraLight"><i class="fa fa-ship padding-avg-right" aria-hidden="true"></i>Affordable Rate</h3>
                 <p class="font-ExtraLight padding-top-avg col-sm-12 no-padding-h">
                     FRS Courier Service is the courier service that can meet and exceed your expectations. We are an employee owned and operated company making it happen on the road in the New Delhi Bay Area.
                 </p>

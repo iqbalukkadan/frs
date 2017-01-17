@@ -76,12 +76,33 @@ body,html{
 .theme-bg-green{
     background: #037b85;
 }
-.why-img-1,.why-img-2,.why-img-3{
+.why-img-1{
     height: 200px;
     width: 100%;
-    background: url(../images/why/why-1.jpg);
+    background-image: url(../../dist/images/why/courier-servicesfrsl.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.why-img-2{
+    height: 200px;
+    width: 100%;
+    background-image: url(../../dist/images/why/);
+    background-size: cover;
+    background-position: center;  
+}
+.why-img-3{
+    height: 200px;
+    width: 100%;
+    background-image: url(../../dist/images/why/-courier-24-7.jpg);
     background-size: cover;
     background-position: center;
+}
+.why-img-4{
+   height: 200px;
+    width: 100%;
+    background-image: url(../../dist/images/why/);
+    background-size: cover;
+    background-position: center;  
 }
 a{
     text-decoration:none; 
@@ -451,7 +472,7 @@ a:focus,a:hover,a:active{
     width: 100%;
     border-radius:3px; 
     border: 1px solid #037b85;
-    background: rgba(255,255,255,.8);
+    background: rgba(255,255,255,1);
     
 }
 
