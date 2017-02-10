@@ -19,7 +19,7 @@
     <div class="container">
         <div class="col-sm-10 center text-center font-ExtraLight">
             <h2 class="section-title">
-                What you need to know <span>about FRS asas</span> 
+                What you need to know <span>about FRS asas gfdg</span> 
             </h2>
             <div class="border"></div>
             <p class="font-avg padding-min">FRS Courier Service is the courier service that can meet and exceed your expectations. We are an employee owned and operated company making it happen on the road in the New Delhi Bay Area. With years of experience we bring to our clients a sense of confidence that they have the right team of professionals on the job. Call today for a price quote, or use our quick and easy online quote request tool or quick question form. We will provide an immediate response</p>
