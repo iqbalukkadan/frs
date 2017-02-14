@@ -4,8 +4,8 @@ This is a starter template page. Use this page to start your new project from
 scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html>
-    <?php 
-    $user=new frsUser();
+    <?php
+    $user = new frsUser();
     ?>
     <head>
         <meta charset="utf-8">
@@ -26,7 +26,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Theme style -->
         <link rel="stylesheet" href="<?php echo CSSPATH ?>/AdminLTE.min.css">
         <link rel="stylesheet" href="<?php echo COMPONENTPATH ?>/jquery-ui-1.12.1.custom/jquery-ui.css" type="text/css">
-        <script src="<?php echo COMPONENTPATH ?>/jquery-ui-1.12.1.custom/jquery-ui.js" type="text/javascript"></script>
+        
+
+        <script src="<?php echo COMPONENTPATH ?>/select2-master/dist/css/select2.min" type="text/javascript"></script>
+        <link rel="stylesheet" href="<?php echo COMPONENTPATH ?>/select2-master/dist/js/select2.min.css" type="text/css">
         <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
               page. However, you can choose any other skin. Make sure you
               apply the skin class to the body tag so the changes take effect.
@@ -273,7 +276,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li class="active"><a href="<?php echo BASE_URL?>/consignment"><i class="fa fa-circle-o"></i> manage</a></li>
+                                <li class="active"><a href="<?php echo BASE_URL ?>/consignment"><i class="fa fa-circle-o"></i> manage</a></li>
                                 <li><a href=""><i class="fa fa-circle-o"></i> update</a></li>
                             </ul>
                         </li>
@@ -285,10 +288,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li class="active"><a href="<?php echo BASE_URL?>/create"><i class="fa fa-circle-o"></i> create user</a></li>
-                                <li><a href="<?php echo BASE_URL?>/update"><i class="fa fa-circle-o"></i> manage user</a></li>
+                                <li class="active"><a href="<?php echo BASE_URL ?>/create"><i class="fa fa-circle-o"></i> create user</a></li>
+                                <li><a href="<?php echo BASE_URL ?>/update"><i class="fa fa-circle-o"></i> manage user</a></li>
 
-                                
+
                             </ul>
                         </li>
                         <li><a href="#"><i class="fa fa-plus"></i> <span>Add invoice</span></a></li>
@@ -304,9 +307,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
-                
 
-                    
-               
 
-                
+
+
+

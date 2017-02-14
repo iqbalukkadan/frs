@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+//    $(document).ready(function () {
+//        $(".js-select").select2();
+//    });
+
 //    login
 
 
@@ -36,6 +40,32 @@ $(document).ready(function () {
 //    consignment
 
 
+    $("#invoice-form").submit(function (e) {
+        e.preventDefault();
+//        var c = validate("#consignment-form");
+
+//        if (c == true) {
+        
+        $.ajax({
+            url: 'consignment/addInvoice',
+            data: $("#invoice-form").serialize(),
+            type: "post",
+            dataType: "json",
+            success: function (result) {
+
+                server_validate(result, "#invoice-form");
+                
+            },
+            error: function (result) {
+                $('.form-error').remove();
+                $("#invoice-form").prepend('<div class="form-error">\n\
+            Some un expectted error occuered\n\
+            </div>').slideDown(1000);
+            }
+        });
+//        }
+
+    });
     $("#consignment-form").submit(function (e) {
         e.preventDefault();
 //        var c = validate("#consignment-form");
@@ -50,23 +80,7 @@ $(document).ready(function () {
             success: function (result) {
 
                 server_validate(result, "#consignment-form");
-                $.each(result, function (key, value) {
-                    var NewRow = '<tr><td">' + value.consignmentId + '</td>';
-                    NewRow += '<td>' + value.billNumber + '</td>';
-                    NewRow += '<td>' + value.companyName + '</td>';
-                    NewRow += '<td>' + value.pickupDate + '</td>';
-                    NewRow += '<td>' + value.origin + '</td>';
-                    NewRow += '<td>' + value.consigneeName + '</td>';
-                    NewRow += '<td>' + value.mode + '</td>';
-                    NewRow += '<td>' + value.weight + '</td>';
-                    NewRow += '<td>' + value.destination + '</td>';
-                    NewRow += '<td>' + value.amount + '</td>';
-                    NewRow += '<td>' + value.status + '</td>';
-                    NewRow += '<td>' + value.deliveryAddress + '</td>';
-                    NewRow += '</tr>';
-
-                    $(".table-list").append(NewRow);
-                });
+                
             },
             error: function (result) {
                 $('.form-error').remove();
@@ -224,6 +238,7 @@ function validate(form)
 $(function () {
     $("#datepicker").datepicker({dateFormat: 'yy-mm-dd'});
 });
+
 function server_validate(result, form) {
     $('.form-error').remove();
     if (result.result === '100') {
