@@ -64,7 +64,7 @@
 
                         <div class="form-group col-md-6 no-padding-right">
                             <label>Branch</label>
-                            <select name="branch" class="form-control select2 select" style="width: 100%;">
+                            <select name="branch" class="form-control select" style="width: 100%;">
                                 <!--<option value="none" selected="selected">select branch</option>-->
                                 <?php foreach ($branches as $each) { ?>
                                     <option value="<?php echo $each->branch ?>"><?php echo $each->branch ?></option>
@@ -125,3 +125,8 @@
     </div>
 </section>
 
+<script type="text/javascript">
+$(document).ready(function() {
+  $('select').select2();
+});
+</script>

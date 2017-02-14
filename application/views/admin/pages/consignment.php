@@ -73,7 +73,7 @@
                             <input type="text" class="required form-control" name="name" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3">
-                            <label for="exampleInputEmail1">Pickup Date</label>
+                            <label>Pickup Date</label>
                             <input id="datepicker" class="required form-control" type="text" name="date">
                         </div>
                         <div class="form-group col-md-3">
@@ -110,7 +110,7 @@
                     <!-- /.box-body -->
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">Add</button>
+                        <button type="submit" class="btn btn-primary">Add Consignment</button>
                     </div>
                 </form>
             </div>
@@ -120,6 +120,65 @@
 </section>
 <br><br>
 <section>
+    <div class="row"><div class="col-md-12">
+            <!-- general form elements -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Add Invoice</h3>
+                </div>
+                <form id="invoice-form" method="post" action="consignment/addInvoice">
+                    <div class="box-body">
+                        <div class="form-group col-md-3">
+                            <label>Invoice Number</label>
+                            <input type="text" class="required form-control" name="invoicenum" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Consignment Number</label>
+                            <input type="text" class="required form-control" name="billnum" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Origin</label>
+                            <input type="text" class="required form-control" name="origin" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="exampleInputEmail1">Invoice Weight</label>
+                            <input class="required form-control" type="text" name="weight">
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <label>Quantity in pieces</label>
+                            <input type="text" class="required form-control" name="quantity" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Destination</label>
+                            <input type="text" class="required form-control" name="destination" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Date</label>
+                            <input id="datepicker" class="required form-control" type="text" name="date">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Amount</label>
+                            <input type="text" class="required form-control" name="amount" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Delivery Address</label>
+                            <textarea type="text" class="required form-control" name="address" data-type="billnum" ></textarea>
+                        </div>
+
+                    </div>
+                    <!-- /.box-body -->
+
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-primary">Add Invoice</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--<section>
     <div class="row">
         <div class="col-xs-12">
             <div class="box consignment">
@@ -154,34 +213,34 @@
                                 <th>Delivery Address</th>
                             </tr>
                         </thead>
-<!--                        <tbody>
+                        <tbody>
 
-                        <?php foreach (array_reverse($consignmentDetails) as $row) { ?>
-                                                    <tr class="consignment-row">
-                                                        <td><?php echo $row->consignmentId; ?></td>
-                                                        <td><?php echo $row->billNumber; ?></td>
-                                                        <td><?php echo $row->companyName; ?></td>
-                                                        <td><?php echo $row->pickupDate; ?></td>
-                                                        <td><?php echo $row->origin; ?></td>
-                                                        <td><?php echo $row->consigneeName; ?></td>
-                                                        <td><?php echo $row->mode; ?></td>
-                                                        <td><?php echo $row->weight; ?></td>
-                                                        <td><?php echo $row->destination; ?></td>
-                                                        <td><?php echo $row->amount; ?></td>
-                                                        <td><?php echo $row->status; ?></td>
-                                                        <td><?php echo $row->deliveryAddress; ?></td>
-                                                    </tr>
-                        <?php } ?>
+<?php foreach (array_reverse($consignmentDetails) as $row) { ?>
+                                                                <tr class="consignment-row">
+                                                                    <td><?php echo $row->consignmentId; ?></td>
+                                                                    <td><?php echo $row->billNumber; ?></td>
+                                                                    <td><?php echo $row->companyName; ?></td>
+                                                                    <td><?php echo $row->pickupDate; ?></td>
+                                                                    <td><?php echo $row->origin; ?></td>
+                                                                    <td><?php echo $row->consigneeName; ?></td>
+                                                                    <td><?php echo $row->mode; ?></td>
+                                                                    <td><?php echo $row->weight; ?></td>
+                                                                    <td><?php echo $row->destination; ?></td>
+                                                                    <td><?php echo $row->amount; ?></td>
+                                                                    <td><?php echo $row->status; ?></td>
+                                                                    <td><?php echo $row->deliveryAddress; ?></td>
+                                                                </tr>
+<?php } ?>
 
 
-                        </tbody>-->
+                        </tbody>
 
                     </table>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <!-- /.content -->
 </div>
 

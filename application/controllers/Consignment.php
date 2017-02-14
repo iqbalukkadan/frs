@@ -7,7 +7,7 @@ class Consignment extends CI_Controller {
         if (!isset($this->session->userdata['logged_in'])) {
 ////////      
             redirect('/login');
-        } 
+        }
 
         $this->load->model('ConsignmentManage');
     }
@@ -122,11 +122,10 @@ class Consignment extends CI_Controller {
                 );
                 $insert = $this->ConsignmentManage->consignmentInsert($data);
                 if ($insert == true) {
-                    $data = $this->ConsignmentManage->displayConsignment();
+//                    $data = $this->ConsignmentManage->displayConsignment();
                     echo json_encode(array(
-                        "result" => print_r($data),
-                        "reason"=>'success',
-                        
+                        "result" => utils_constant::SUCCESS,
+                        "reason" => 'success',
                     ));
                     die();
 
@@ -154,6 +153,30 @@ class Consignment extends CI_Controller {
         $this->load->view('templates/admin_header', $data);
         $this->load->view('admin/pages/' . $page, $data);
         $this->load->view('templates/admin_footer', $data);
+    }
+
+    public function addInvoice() {
+        if ($this->input->is_ajax_request()) {
+
+            try {
+                $data = array(
+                    'invoiceNumber' => $this->input->post('invoicenum', TRUE),
+                    'consignmentNumber' => $this->input->post('billnum', TRUE),
+                    'origin' => $this->input->post('origin', TRUE),
+                    'invoiceWeight' => $this->input->post('weight', TRUE),
+                    'quantityInPieces' => $this->input->post('quantity', TRUE),
+                    'destination' => $this->input->post('destination', TRUE),
+                    'date' => $this->input->post('date', TRUE),
+                    'deliveryAddress' => $this->input->post('address', TRUE),
+                    'amount' => $this->input->post('amount', TRUE),
+                );
+                echo 'hii';
+                exit;
+                print_r($data);
+            } catch (Exception $e) {
+                return $e;
+            }
+        }
     }
 
 }
