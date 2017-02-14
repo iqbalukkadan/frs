@@ -155,28 +155,6 @@ class Consignment extends CI_Controller {
         $this->load->view('templates/admin_footer', $data);
     }
 
-    public function addInvoice() {
-        if ($this->input->is_ajax_request()) {
-
-            try {
-                $data = array(
-                    'invoiceNumber' => $this->input->post('invoicenum', TRUE),
-                    'consignmentNumber' => $this->input->post('billnum', TRUE),
-                    'origin' => $this->input->post('origin', TRUE),
-                    'invoiceWeight' => $this->input->post('weight', TRUE),
-                    'quantityInPieces' => $this->input->post('quantity', TRUE),
-                    'destination' => $this->input->post('destination', TRUE),
-                    'date' => $this->input->post('date', TRUE),
-                    'deliveryAddress' => $this->input->post('address', TRUE),
-                    'amount' => $this->input->post('amount', TRUE),
-                );
-                echo 'hii';
-                exit;
-                print_r($data);
-            } catch (Exception $e) {
-                return $e;
-            }
-        }
-    }
+    
 
 }

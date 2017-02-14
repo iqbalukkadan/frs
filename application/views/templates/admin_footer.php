@@ -102,6 +102,7 @@
 <!-- Bootstrap 3.3.6 -->
 <script src="<?php echo COMPONENTPATH ?>/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
+<script src="<?php echo SCRIPTPATH ?>/select2.min.js"></script>
 <script src="<?php echo SCRIPTPATH ?>/app.min.js"></script>
 <script src="<?php echo COMPONENTPATH ?>/jquery-ui-1.12.1.custom/jquery-ui.js" type="text/javascript"></script>
 </html>

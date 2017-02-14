@@ -26,10 +26,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Theme style -->
         <link rel="stylesheet" href="<?php echo CSSPATH ?>/AdminLTE.min.css">
         <link rel="stylesheet" href="<?php echo COMPONENTPATH ?>/jquery-ui-1.12.1.custom/jquery-ui.css" type="text/css">
-        
 
-        <script src="<?php echo COMPONENTPATH ?>/select2-master/dist/css/select2.min" type="text/javascript"></script>
-        <link rel="stylesheet" href="<?php echo COMPONENTPATH ?>/select2-master/dist/js/select2.min.css" type="text/css">
+
+        <link href="<?php echo CSSPATH ?>/select2.min.css" rel="stylesheet" />
+        
         <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
               page. However, you can choose any other skin. Make sure you
               apply the skin class to the body tag so the changes take effect.
@@ -219,7 +219,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <a href="#" class="btn btn-default btn-flat">Profile</a>
                                         </div>
                                         <div class="pull-right">
-                                            <a href="auth/logout" class="btn btn-default btn-flat">Sign out</a>
+                                            <a href="<?php echo BASE_URL?>/auth/logout" class="btn btn-default btn-flat">Sign out</a>
                                         </div>
                                     </li>
                                 </ul>

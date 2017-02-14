@@ -53,7 +53,7 @@
                         </div>
                         <div class="form-group col-md-6 no-padding-left">
                             <label>Role</label>
-                            <select name="role" class="form-control" style="width: 100%;">
+                            <select name="role" class="form-control select2" style="width: 100%;">
                                 <!--<option value="none" selected="selected">select role</option>-->
                                 <?php foreach ($roles as $each) { ?>
                                     <option value="<?php echo $each->role ?>"><?php echo $each->role ?></option>
@@ -64,7 +64,7 @@
 
                         <div class="form-group col-md-6 no-padding-right">
                             <label>Branch</label>
-                            <select name="branch" class="form-control select" style="width: 100%;">
+                            <select name="branch" class="form-control select select2" style="width: 100%;">
                                 <!--<option value="none" selected="selected">select branch</option>-->
                                 <?php foreach ($branches as $each) { ?>
                                     <option value="<?php echo $each->branch ?>"><?php echo $each->branch ?></option>
@@ -95,18 +95,17 @@
                 <div class="box-body no-padding">
                     <table class="table">
                         <tr>
-                            <th>Id</th>
                             <th>User Name</th>
                             <th>Email</th>
-                            
+                            <th>Role</th>
                         </tr>
                         <?php
                         foreach ($userDetails as $row){
                         ?>
                         <tr>
-                            <td><?php echo $row->userId; ?></td>
                             <td><?php echo $row->userUsername; ?></td>
                             <td><?php echo $row->userEmailId; ?></td>
+                            <td><?php echo $row->userRole; ?></td>
                         </tr>
                         <?php } ?>
                        

@@ -21,7 +21,7 @@ $(document).ready(function () {
 
                     server_validate(result, "#login-form");
                     if (result.result == "100") {
-                        window.location.href = "admin";
+                        window.location.href = "admin/index";
                     }
 
                 },

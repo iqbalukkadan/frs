@@ -51,21 +51,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   |		my-controller/my-method	-> my_controller/my_method
  */
 $route['404_override'] = '';
+
 $route['translate_uri_dashes'] = FALSE;
+
 $route['default_controller'] = 'pages/view';
-$route['admin'] = 'admin/index';
-$route['admin/(:any)'] = 'admin/index/$1';
+
 $route['(:any)'] = 'pages/view/$1';
-$route['create'] = 'user/create';
-$route['create/(:any)'] = 'user/create/$1';
-$route['login'] = 'auth/login';
-$route['login/(:any)'] = 'auth/login/$1';
 
-$route['update'] = 'user/update';
-$route['update/(:any)'] = 'user/update/$1';
+$route['admin/(:any)'] = 'admin/$1';
 
-$route['edit'] = 'user/edit';
-$route['edit/(:any)'] = 'user/edit/$1';
+$route['user/(:any)'] = 'user/$1';
 
-$route['consignment'] = 'Consignment/addConsignment';
-$route['consignment/(:any)'] = 'Consignment/addConsignment/$1';
+$route['login/(:any)'] = 'auth/$1';
+
+$route['consignment/(:any)'] = 'Consignment/$1';

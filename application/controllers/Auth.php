@@ -21,7 +21,7 @@ class Auth extends CI_Controller {
         if (isset($this->session->userdata['logged_in'])) {
 ////////        $username=($this->session->userdata['logged_in']['username']);
 ////////        $email=($this->session->userdata['logged_in']['password']);
-            redirect('/admin');
+            redirect(BASE_URL.'/admin/index');
         } else {
 
 
@@ -46,18 +46,11 @@ class Auth extends CI_Controller {
                             "field" => "password"
                         ));
                         die();
-                    }
-//            if ($this->form_validation->run() == TRUE) {
-//                echo json_encode(array(
-//                    "result" => utils_constant::SUCCESS,
-//                ));s
-//
-//                die();
-//            }
+                    }    
 
                     $username = $this->input->post('userName');
                     $password = $this->input->post('password');
-
+                    
                     $user = new frsUser();
 
                     $result = $user->userLogin($username, $password);
@@ -104,7 +97,7 @@ class Auth extends CI_Controller {
         $this->session->unset_userdata('logged_in', $sess_array);
 //        $this->CI->session->sess_destroy();
         
-        redirect('/login');
+        redirect(BASE_URL.'/auth/login');
     }
 
 }
