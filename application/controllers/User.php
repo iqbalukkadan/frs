@@ -7,7 +7,7 @@ class User extends CI_Controller {
         if (!isset($this->session->userdata['logged_in'])) {
 ////////        $username=($this->session->userdata['logged_in']['username']);
 ////////        $email=($this->session->userdata['logged_in']['password']);
-            redirect('/login');
+            redirect(BASE_URL.'/auth/login');
         }
 
         $this->load->model('UserManage');

@@ -65,3 +65,5 @@ $route['user/(:any)'] = 'user/$1';
 $route['login/(:any)'] = 'auth/$1';
 
 $route['consignment/(:any)'] = 'Consignment/$1';
+
+$route['invoice/(:any)'] = 'invoice/$1';

@@ -6,7 +6,7 @@ class Consignment extends CI_Controller {
         parent::__construct();
         if (!isset($this->session->userdata['logged_in'])) {
 ////////      
-            redirect('/login');
+            redirect(BASE_URL . '/auth/login');
         }
 
         $this->load->model('ConsignmentManage');
@@ -17,97 +17,89 @@ class Consignment extends CI_Controller {
         if ($this->input->is_ajax_request()) {
 
             try {
-//                $this->form_validation->set_rules('billnum', 'Name', 'required');
-//                if ($this->form_validation->run() == false) {
-//                    echo json_encode(array(
-//                        "result" => utils_constant::ERROR_VALID_INPUT,
-//                        "reason" => "Incorrect Bill Number",
-//                        "field" => "billnum"
-//                    ));
-//                    die();
-//                }
-//                $this->form_validation->set_rules('name', 'Name', 'required');
-//                if ($this->form_validation->run() == false) {
-//                    echo json_encode(array(
-//                        "result" => utils_constant::ERROR_VALID_INPUT,
-//                        "reason" => "Incorrect Company Name",
-//                        "field" => "name"
-//                    ));
-//                    die();
-//                }
-//
-//                $this->form_validation->set_rules('date', 'Name', 'required');
-//                if ($this->form_validation->run() == false) {
-//                    echo json_encode(array(
-//                        "result" => utils_constant::ERROR_VALID_INPUT,
-//                        "reason" => "Pickup date is required",
-//                        "field" => "date"
-//                    ));
-//                    die();
-//                }
-//                $this->form_validation->set_rules('origin', 'Name', 'required');
-//                if ($this->form_validation->run() == false) {
-//                    echo json_encode(array(
-//                        "result" => utils_constant::ERROR_VALID_INPUT,
-//                        "reason" => "Origin is required",
-//                        "field" => "origin"
-//                    ));
-//                    die();
-//                }
-//                $this->form_validation->set_rules('consignee', 'Name', 'required');
-//                if ($this->form_validation->run() == false) {
-//                    echo json_encode(array(
-//                        "result" => utils_constant::ERROR_VALID_INPUT,
-//                        "reason" => "Consignee name is required",
-//                        "field" => "consignee"
-//                    ));
-//                    die();
-//                }
-//                $this->form_validation->set_rules('mode', 'Name', 'required');
-//                if ($this->form_validation->run() == false) {
-//                    echo json_encode(array(
-//                        "result" => utils_constant::ERROR_VALID_INPUT,
-//                        "reason" => "Mode is required",
-//                        "field" => "mode"
-//                    ));
-//                    die();
-//                }
-//                $this->form_validation->set_rules('weight', 'Name', 'required');
-//                if ($this->form_validation->run() == false) {
-//                    echo json_encode(array(
-//                        "result" => utils_constant::ERROR_VALID_INPUT,
-//                        "reason" => "Weight is required",
-//                        "field" => "weight"
-//                    ));
-//                    die();
-//                }
-//                $this->form_validation->set_rules('destination', 'Name', 'required');
-//                if ($this->form_validation->run() == false) {
-//                    echo json_encode(array(
-//                        "result" => utils_constant::ERROR_VALID_INPUT,
-//                        "reason" => "Destination is required",
-//                        "field" => "destination"
-//                    ));
-//                    die();
-//                }
-//                $this->form_validation->set_rules('amount', 'Name', 'required');
-//                if ($this->form_validation->run() == false) {
-//                    echo json_encode(array(
-//                        "result" => utils_constant::ERROR_VALID_INPUT,
-//                        "reason" => "Weight is required",
-//                        "field" => "amount"
-//                    ));
-//                    die();
-//                }
-//                $this->form_validation->set_rules('address', 'Name', 'required');
-//                if ($this->form_validation->run() == false) {
-//                    echo json_encode(array(
-//                        "result" => utils_constant::ERROR_VALID_INPUT,
-//                        "reason" => "Delivery Address is required",
-//                        "field" => "address"
-//                    ));
-//                    die();
-//                }
+                $this->form_validation->set_rules('billnum', 'Name', 'required');
+                if ($this->form_validation->run() == false) {
+                    echo json_encode(array(
+                        "result" => utils_constant::ERROR_VALID_INPUT,
+                        "reason" => "Incorrect Bill Number",
+                        "field" => "billnum"
+                    ));
+                    die();
+                }
+                $this->form_validation->set_rules('name', 'Name', 'required');
+                if ($this->form_validation->run() == false) {
+                    echo json_encode(array(
+                        "result" => utils_constant::ERROR_VALID_INPUT,
+                        "reason" => "Incorrect Company Name",
+                        "field" => "name"
+                    ));
+                    die();
+                }
+
+                $this->form_validation->set_rules('date', 'Name', 'required');
+                if ($this->form_validation->run() == false) {
+                    echo json_encode(array(
+                        "result" => utils_constant::ERROR_VALID_INPUT,
+                        "reason" => "Pickup date is required",
+                        "field" => "date"
+                    ));
+                    die();
+                }
+                $this->form_validation->set_rules('origin', 'Name', 'required');
+                if ($this->form_validation->run() == false) {
+                    echo json_encode(array(
+                        "result" => utils_constant::ERROR_VALID_INPUT,
+                        "reason" => "Origin is required",
+                        "field" => "origin"
+                    ));
+                    die();
+                }
+                $this->form_validation->set_rules('consignee', 'Name', 'required');
+                if ($this->form_validation->run() == false) {
+                    echo json_encode(array(
+                        "result" => utils_constant::ERROR_VALID_INPUT,
+                        "reason" => "Consignee name is required",
+                        "field" => "consignee"
+                    ));
+                    die();
+                }
+                $this->form_validation->set_rules('mode', 'Name', 'required');
+                if ($this->form_validation->run() == false) {
+                    echo json_encode(array(
+                        "result" => utils_constant::ERROR_VALID_INPUT,
+                        "reason" => "Mode is required",
+                        "field" => "mode"
+                    ));
+                    die();
+                }
+                $this->form_validation->set_rules('weight', 'Name', 'required');
+                if ($this->form_validation->run() == false) {
+                    echo json_encode(array(
+                        "result" => utils_constant::ERROR_VALID_INPUT,
+                        "reason" => "Weight is required",
+                        "field" => "weight"
+                    ));
+                    die();
+                }
+                $this->form_validation->set_rules('destination', 'Name', 'required');
+                if ($this->form_validation->run() == false) {
+                    echo json_encode(array(
+                        "result" => utils_constant::ERROR_VALID_INPUT,
+                        "reason" => "Destination is required",
+                        "field" => "destination"
+                    ));
+                    die();
+                }
+                $this->form_validation->set_rules('amount', 'Name', 'required');
+                if ($this->form_validation->run() == false) {
+                    echo json_encode(array(
+                        "result" => utils_constant::ERROR_VALID_INPUT,
+                        "reason" => "Weight is required",
+                        "field" => "amount"
+                    ));
+                    die();
+                }
+                
                 $data = array(
                     'billNumber' => $this->input->post('billnum', TRUE),
                     'companyName' => $this->input->post('name', TRUE),
@@ -118,7 +110,14 @@ class Consignment extends CI_Controller {
                     'weight' => $this->input->post('weight', TRUE),
                     'destination' => $this->input->post('destination', TRUE),
                     'amount' => $this->input->post('amount', TRUE),
-                    'deliveryAddress' => $this->input->post('address', TRUE),
+                    'deliveryState' => $this->input->post('state', TRUE),
+                    'deliveryDistrict' => $this->input->post('district', TRUE),
+                    'deliveryCity' => $this->input->post('city', TRUE),
+                    'deliveryPin' => $this->input->post('pin', TRUE),
+                    'deliveryMobile' => $this->input->post('mob', TRUE),
+                    'deliveryClint' => $this->input->post('clintName', TRUE),
+                    'deliveryClintHouse' => $this->input->post('home', TRUE),
+                    'deliveryClintPost' => $this->input->post('post', TRUE),
                 );
                 $insert = $this->ConsignmentManage->consignmentInsert($data);
                 if ($insert == true) {
@@ -154,7 +153,5 @@ class Consignment extends CI_Controller {
         $this->load->view('admin/pages/' . $page, $data);
         $this->load->view('templates/admin_footer', $data);
     }
-
-    
 
 }

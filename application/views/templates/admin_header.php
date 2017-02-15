@@ -29,13 +29,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
         <link href="<?php echo CSSPATH ?>/select2.min.css" rel="stylesheet" />
-        
+
         <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
               page. However, you can choose any other skin. Make sure you
               apply the skin class to the body tag so the changes take effect.
         -->
         <link rel="stylesheet" href="<?php echo CSSPATH ?>/skins/skin-blue.min.css">
-
+        <script>
+            BASE_URL =<?php echo BASE_URL ?>;
+        </script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -219,7 +221,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <a href="#" class="btn btn-default btn-flat">Profile</a>
                                         </div>
                                         <div class="pull-right">
-                                            <a href="<?php echo BASE_URL?>/auth/logout" class="btn btn-default btn-flat">Sign out</a>
+                                            <a href="<?php echo BASE_URL ?>/auth/logout" class="btn btn-default btn-flat">Sign out</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -276,7 +278,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li class="active"><a href="<?php echo BASE_URL ?>/consignment"><i class="fa fa-circle-o"></i> manage</a></li>
+                                <li class="active"><a href="<?php echo BASE_URL ?>/consignment/addConsignment"><i class="fa fa-circle-o"></i> manage</a></li>
                                 <li><a href=""><i class="fa fa-circle-o"></i> update</a></li>
                             </ul>
                         </li>

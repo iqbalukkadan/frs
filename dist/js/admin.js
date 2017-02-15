@@ -1,8 +1,5 @@
 $(document).ready(function () {
 
-//    $(document).ready(function () {
-//        $(".js-select").select2();
-//    });
 
 //    login
 
@@ -10,10 +7,10 @@ $(document).ready(function () {
     $("#login-form").submit(function (e) {
         e.preventDefault();
         var a = validate("#login-form");
-
+        var url = $(this).attr("action");
         if (a == true) {
             $.ajax({
-                url: 'auth/login',
+                url: url,
                 data: $("#login-form").serialize(),
                 type: "post",
                 dataType: "json",
@@ -21,7 +18,7 @@ $(document).ready(function () {
 
                     server_validate(result, "#login-form");
                     if (result.result == "100") {
-                        window.location.href = "admin/index";
+                        window.location.href = "/admin/index";
                     }
 
                 },
@@ -45,16 +42,16 @@ $(document).ready(function () {
 //        var c = validate("#consignment-form");
 
 //        if (c == true) {
-        
+
         $.ajax({
-            url: 'consignment/addInvoice',
+            url: 'onsignment/addInvoice',
             data: $("#invoice-form").serialize(),
             type: "post",
             dataType: "json",
             success: function (result) {
 
                 server_validate(result, "#invoice-form");
-                
+
             },
             error: function (result) {
                 $('.form-error').remove();
@@ -68,28 +65,27 @@ $(document).ready(function () {
     });
     $("#consignment-form").submit(function (e) {
         e.preventDefault();
-//        var c = validate("#consignment-form");
+        var c = validate("#consignment-form");
 
-//        if (c == true) {
-        var row = $(this).parents('.consignment-row');
-        $.ajax({
-            url: 'consignment/addConsignment',
-            data: $("#consignment-form").serialize(),
-            type: "post",
-            dataType: "json",
-            success: function (result) {
+        if (c == true) {
+            
+            $.ajax({
+                url: base_url+'consignment/addConsignment',
+                data: $("#consignment-form").serialize(),
+                type: "post",
+                dataType: "json",
+                success: function (result) {
 
-                server_validate(result, "#consignment-form");
-                
-            },
-            error: function (result) {
-                $('.form-error').remove();
-                $("#consignment-form").prepend('<div class="form-error">\n\
+                    server_validate(result, "#consignment-form");
+                },
+                error: function (result) {
+                    $('.form-error').remove();
+                    $("#consignment-form").prepend('<div class="form-error">\n\
             Some un expectted error occuered\n\
             </div>').slideDown(1000);
-            }
-        });
-//        }
+                }
+            });
+        }
 
     });
 
@@ -235,6 +231,9 @@ function validate(form)
     });
     return validate;
 }
+//$(function () {
+//    $("#datepicker").datepicker({dateFormat: 'yy-mm-dd'});
+//});
 $(function () {
     $("#datepicker").datepicker({dateFormat: 'yy-mm-dd'});
 });

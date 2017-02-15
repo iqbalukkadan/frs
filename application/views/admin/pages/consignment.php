@@ -1,7 +1,7 @@
-<!-- Main content -->
 
 
-<section>
+
+<section class="content">
     <div class="row">
         <!--        <div class="col-xs-12">
                     <div class="box consignment">
@@ -56,7 +56,7 @@
                     </div>
                      /.box 
                 </div>-->
-        <div class="col-md-12">
+        <div class="col-xs-12">
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header with-border">
@@ -100,12 +100,38 @@
                             <label>Amount</label>
                             <input type="text" class="required form-control" name="amount" data-type="billnum" >
                         </div>
-                        <div class="form-group col-md-6">
-                            <label>Delivery Address</label>
-                            <textarea type="text" class="required form-control" name="address" data-type="billnum" ></textarea>
+                        <div class="form-group col-md-3">
+                            <label>Delivery State</label>
+                            <input type="text" class="form-control" name="state" data-type="billnum" >
                         </div>
-
-
+                        <div class="form-group col-md-3">
+                            <label>Delivery District</label>
+                            <input type="text" class="form-control" name="district" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery City</label>
+                            <input type="text" class="form-control" name="city" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery Pin:</label>
+                            <input type="text" class="form-control" name="pin" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery mobile Number</label>
+                            <input type="text" class="form-control" name="mob" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery Clint</label>
+                            <input type="text" class="form-control" name="clintName" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery Home</label>
+                            <input type="text" class="form-control" name="home" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery Post</label>
+                            <input type="text" class="form-control" name="post" data-type="billnum" >
+                        </div>
                     </div>
                     <!-- /.box-body -->
 
@@ -115,6 +141,7 @@
                 </form>
             </div>
         </div>
+
     </div>
 
 </section>
@@ -159,20 +186,20 @@
                         <tbody>
 
 <?php foreach (array_reverse($consignmentDetails) as $row) { ?>
-                                                                <tr class="consignment-row">
-                                                                    <td><?php echo $row->consignmentId; ?></td>
-                                                                    <td><?php echo $row->billNumber; ?></td>
-                                                                    <td><?php echo $row->companyName; ?></td>
-                                                                    <td><?php echo $row->pickupDate; ?></td>
-                                                                    <td><?php echo $row->origin; ?></td>
-                                                                    <td><?php echo $row->consigneeName; ?></td>
-                                                                    <td><?php echo $row->mode; ?></td>
-                                                                    <td><?php echo $row->weight; ?></td>
-                                                                    <td><?php echo $row->destination; ?></td>
-                                                                    <td><?php echo $row->amount; ?></td>
-                                                                    <td><?php echo $row->status; ?></td>
-                                                                    <td><?php echo $row->deliveryAddress; ?></td>
-                                                                </tr>
+                                                                        <tr class="consignment-row">
+                                                                            <td><?php echo $row->consignmentId; ?></td>
+                                                                            <td><?php echo $row->billNumber; ?></td>
+                                                                            <td><?php echo $row->companyName; ?></td>
+                                                                            <td><?php echo $row->pickupDate; ?></td>
+                                                                            <td><?php echo $row->origin; ?></td>
+                                                                            <td><?php echo $row->consigneeName; ?></td>
+                                                                            <td><?php echo $row->mode; ?></td>
+                                                                            <td><?php echo $row->weight; ?></td>
+                                                                            <td><?php echo $row->destination; ?></td>
+                                                                            <td><?php echo $row->amount; ?></td>
+                                                                            <td><?php echo $row->status; ?></td>
+                                                                            <td><?php echo $row->deliveryAddress; ?></td>
+                                                                        </tr>
 <?php } ?>
 
 
@@ -188,3 +215,6 @@
 </div>
 
 
+<script type="text/javascript">
+    base_url = '<?php echo BASE_URL ?>';
+</script>

@@ -1,6 +1,6 @@
-<section>
+<section class="content">
     <div class="row">
-        <div class="row"><div class="col-md-12">
+        <div class="col-md-12">
                 <!-- general form elements -->
                 <div class="box box-primary">
                     <div class="box-header with-border">
@@ -40,10 +40,58 @@
                                 <label>Amount</label>
                                 <input type="text" class="required form-control" name="amount" data-type="billnum" >
                             </div>
-                            <div class="form-group col-md-6">
-                                <label>Delivery Address</label>
-                                <textarea type="text" class="required form-control" name="address" data-type="billnum" ></textarea>
+                            <div class="form-group col-md-3">
+                                <label>Delivery State</label>
+                                <input type="text" class="required form-control" name="state" data-type="billnum" >
                             </div>
+                            <div class="form-group col-md-3">
+                                <label>Delivery City</label>
+                                <input type="text" class="required form-control" name="city" data-type="billnum" >
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Delivery District</label>
+                                <input type="text" class="required form-control" name="district" data-type="billnum" >
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Delivery Pin:</label>
+                                <input type="text" class="required form-control" name="pin" data-type="billnum" >
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Delivery mobile Number:</label>
+                                <input type="text" class="required form-control" name="mob" data-type="billnum" >
+                            </div>
+                            <div class="form-group col-md-3">
+                            <label>Delivery State</label>
+                            <input type="text" class="required form-control" name="state" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery District</label>
+                            <input type="text" class="required form-control" name="district" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery City</label>
+                            <input type="text" class="required form-control" name="city" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery Pin:</label>
+                            <input type="text" class="required form-control" name="pin" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery mobile Number</label>
+                            <input type="text" class="required form-control" name="mob" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery Clint</label>
+                            <input type="text" class="required form-control" name="clintName" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery Home</label>
+                            <input type="text" class="required form-control" name="home" data-type="billnum" >
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Delivery Post</label>
+                            <input type="text" class="required form-control" name="post" data-type="billnum" >
+                        </div>
 
                         </div>
                         <!-- /.box-body -->
