@@ -290,13 +290,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li class="active"><a href="<?php echo BASE_URL ?>/create"><i class="fa fa-circle-o"></i> create user</a></li>
-                                <li><a href="<?php echo BASE_URL ?>/update"><i class="fa fa-circle-o"></i> manage user</a></li>
+                                <li class="active"><a href="<?php echo BASE_URL ?>/user/create"><i class="fa fa-circle-o"></i> create user</a></li>
+                                <li><a href="<?php echo BASE_URL ?>/user/update"><i class="fa fa-circle-o"></i> manage user</a></li>
 
 
                             </ul>
                         </li>
-                        <li><a href="#"><i class="fa fa-plus"></i> <span>Add invoice</span></a></li>
+                        <li><a href="<?php echo BASE_URL ?>/invoice/addInvoice"><i class="fa fa-plus"></i> <span>Add invoice</span></a></li>
                         <li><a href="#"><i class="fa fa-tasks"></i> <span>SCM</span></a></li>
                         <li><a href="#"><i class="fa fa-bar-chart"></i> <span>Report</span></a></li>
 

@@ -159,8 +159,6 @@ class User extends CI_Controller {
 
     public function edit($page = 'useredit') {
 
-
-
         if ($this->input->is_ajax_request()) {
 
             try {

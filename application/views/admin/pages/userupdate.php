@@ -46,8 +46,8 @@
                                     <td><?php echo $row->userRole; ?></td>
                                     <td><?php echo $row->userBranch; ?></td>
                                     <td><?php echo $row->createdDate; ?></td>
-                                    <td><button data-url="user/delete" data-id="<?php echo $row->userId; ?>" class="btn userDelete">Delete</button></td>
-                                    <td><a href='edit?id=<?php echo $row->userId; ?>' class="btn">Edit</a></td>
+                                    <td><button data-url="<?php echo BASE_URL?>/user/delete" data-id="<?php echo $row->userId; ?>" class="btn userDelete">Delete</button></td>
+                                    <td><a href='<?php echo BASE_URL?>user/edit?id=<?php echo $row->userId; ?>' class="btn">Edit</a></td>
                                 </tr>
                             <?php } ?>
                         </tbody>

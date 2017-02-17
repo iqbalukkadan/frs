@@ -6,24 +6,28 @@ Class ConsignmentManage extends CI_Model {
         parent::__construct();
     }
 
-   
     function consignmentInsert($data) {
 // Inserting in Table(frs_user) of Database(frs)
         $this->db->insert('frs_consignment', $data);
-        return TRUE;
+//        $inser_id = $this->db->insert_id();
+
+        return $this->db->insert_id();
     }
 
-    public function displayConsignment() {
+    public function consiDetails() {
+        $this->db->select('*');
+        $this->db->from('frs_consignment');
+        $query = $this->db->get();
 
-        $query = "select * from frs_consignment order by consignmentId DESC limit 1";
-        $result = $this->db->query($query);
+        return $query->result();
+    }
+     public function consiDetailsById($billId) {
+        $this->db->select('*');
+        $this->db->from('frs_consignment');
+        $this->db->where('consignmentId', $billId);
+        $query = $this->db->get();
 
-        if ($result->num_rows() > 0) {
-            return $result->result("array");
-        }
-        else{
-            return FALSE;
-        }
+        return $query->result();
     }
 
 }

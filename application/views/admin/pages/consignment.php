@@ -62,7 +62,7 @@
                 <div class="box-header with-border">
                     <h3 class="box-title">Add Consignment</h3>
                 </div>
-                <form id="consignment-form" method="post" action="consignment/addConsignment">
+                <form id="consignment-form" method="post" action="<?php echo BASE_URL ?>/consignment/addConsignment">
                     <div class="box-body">
                         <div class="form-group col-md-3">
                             <label>Bill Number</label>
@@ -137,6 +137,9 @@
 
                     <div class="box-footer">
                         <button type="submit" class="btn btn-primary">Add Consignment</button>
+                        
+                        <a id="consiId" href='<?php echo BASE_URL ?>/invoice/addInvoice?id=<?php echo $result->data; ?>' class="btn btn-primary">Add Invoice</a>
+                        
                     </div>
                 </form>
             </div>
@@ -186,20 +189,20 @@
                         <tbody>
 
 <?php foreach (array_reverse($consignmentDetails) as $row) { ?>
-                                                                        <tr class="consignment-row">
-                                                                            <td><?php echo $row->consignmentId; ?></td>
-                                                                            <td><?php echo $row->billNumber; ?></td>
-                                                                            <td><?php echo $row->companyName; ?></td>
-                                                                            <td><?php echo $row->pickupDate; ?></td>
-                                                                            <td><?php echo $row->origin; ?></td>
-                                                                            <td><?php echo $row->consigneeName; ?></td>
-                                                                            <td><?php echo $row->mode; ?></td>
-                                                                            <td><?php echo $row->weight; ?></td>
-                                                                            <td><?php echo $row->destination; ?></td>
-                                                                            <td><?php echo $row->amount; ?></td>
-                                                                            <td><?php echo $row->status; ?></td>
-                                                                            <td><?php echo $row->deliveryAddress; ?></td>
-                                                                        </tr>
+                                                                            <tr class="consignment-row">
+                                                                                <td><?php echo $row->consignmentId; ?></td>
+                                                                                <td><?php echo $row->billNumber; ?></td>
+                                                                                <td><?php echo $row->companyName; ?></td>
+                                                                                <td><?php echo $row->pickupDate; ?></td>
+                                                                                <td><?php echo $row->origin; ?></td>
+                                                                                <td><?php echo $row->consigneeName; ?></td>
+                                                                                <td><?php echo $row->mode; ?></td>
+                                                                                <td><?php echo $row->weight; ?></td>
+                                                                                <td><?php echo $row->destination; ?></td>
+                                                                                <td><?php echo $row->amount; ?></td>
+                                                                                <td><?php echo $row->status; ?></td>
+                                                                                <td><?php echo $row->deliveryAddress; ?></td>
+                                                                            </tr>
 <?php } ?>
 
 
@@ -215,6 +218,3 @@
 </div>
 
 
-<script type="text/javascript">
-    base_url = '<?php echo BASE_URL ?>';
-</script>

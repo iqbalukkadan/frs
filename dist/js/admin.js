@@ -18,7 +18,7 @@ $(document).ready(function () {
 
                     server_validate(result, "#login-form");
                     if (result.result == "100") {
-                        window.location.href = "/admin/index";
+                        window.location.href = "/frs-courier/admin/index";
                     }
 
                 },
@@ -65,27 +65,32 @@ $(document).ready(function () {
     });
     $("#consignment-form").submit(function (e) {
         e.preventDefault();
-        var c = validate("#consignment-form");
+//        var c = validate("#consignment-form");
+//
+//        if (c == true) {
+        var url = $(this).attr("action");
+        $.ajax({
+//            url: url,
+            url: window.location.origin + "/frs-courier/consignment/addConsignment",
+            data: $("#consignment-form").serialize(),
+            type: "post",
+            dataType: "json",
+            success: function (result) {
+                $('#consiId').html(result.data);
 
-        if (c == true) {
-            
-            $.ajax({
-                url: base_url+'consignment/addConsignment',
-                data: $("#consignment-form").serialize(),
-                type: "post",
-                dataType: "json",
-                success: function (result) {
-
-                    server_validate(result, "#consignment-form");
-                },
-                error: function (result) {
-                    $('.form-error').remove();
-                    $("#consignment-form").prepend('<div class="form-error">\n\
+                if (result.result == '100') {
+                    alert("Consignment Added");
+                }
+                server_validate(result, "#consignment-form");
+            },
+            error: function (result) {
+                $('.form-error').remove();
+                $("#consignment-form").prepend('<div class="form-error">\n\
             Some un expectted error occuered\n\
             </div>').slideDown(1000);
-                }
-            });
-        }
+            }
+        });
+//        }
 
     });
 
@@ -185,6 +190,9 @@ $(document).ready(function () {
     });
 
 });
+function onchangeBill() {
+    document.getElementById("selectBillNum").submit();
+}
 
 function validate(form)
 {
