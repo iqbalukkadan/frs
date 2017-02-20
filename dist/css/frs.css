@@ -139,7 +139,9 @@ a:hover{
     background-color: #e4e4e4;
     margin: 30px 0px 50px 0px!important;
 }
-
+.float-left{
+    float: left;
+}
 ul li{
 
     float:left;
@@ -1065,7 +1067,7 @@ section{
     background-image:url(../..//dist/images/contacts/home-delivery.jpg);
     background-size: cover;
     background-position: center;
-    margin-top:140px; 
+
 }
 .head-top{
     margin-bottom: auto;
@@ -1261,7 +1263,6 @@ input:required, textarea:required {
 /*contact us*/
 /*about us*/
 .abot-us-scn{
-    margin-top:140px; 
     height:auto;
     background-image:url(../..//dist/images/about-us/about-us-s.jpg);
     background-size:cover; 
@@ -1507,7 +1508,6 @@ input:required, textarea:required {
 
     }
     .servic-scn{
-        margin-top:140px; 
         height:auto;
         background-image:url(../..//dist/images/service/package_1.jpg);
         background-size:cover; 
@@ -1798,13 +1798,19 @@ input:required, textarea:required {
     .track-box-paddong{
         padding:10px 3px !important; 
     }
-    .search,.b-search {
+    .search{
         height: 44px;
         font-size:12px; 
         text-align:left;
         padding:0px 7px !important; 
 
 
+    }
+    .b-search {
+        height: 44px;
+        font-size:12px; 
+        text-align:center;
+        padding:0px 7px !important;   
     }
     .padding-slide-p{
         padding:4px !important; 
@@ -1866,6 +1872,9 @@ input:required, textarea:required {
     }
     .enquire-form input, .enquire-form textArea {
         padding: 10px 12px;
+    }
+    .home-slid{
+        margin-top:110px; 
     }
 }
 
@@ -2079,13 +2088,19 @@ input:required, textarea:required {
     .track-box-paddong{
         padding:15px 5px !important; 
     }
-    .search,.b-search {
+    .search{
         height: 45px;
         font-size:14px; 
         text-align:left;
         padding:0px 8px !important; 
 
 
+    }
+    .b-search {
+        height: 45px;
+        font-size:14px; 
+        text-align:center;
+        padding:0px 8px !important;   
     }
     .padding-slide-p{
         padding:10px !important; 
@@ -2149,6 +2164,9 @@ input:required, textarea:required {
     }
     .section-pad{
         padding: 100px 50px 50px 50px !important;
+    }
+    .home-slid{
+        margin-top:110px; 
     }
 
 }
@@ -2335,13 +2353,19 @@ input:required, textarea:required {
     .track-box-paddong {
         padding: 24px 46px !important;
     }
-    .search,.b-search {
+    .search{
         height: 45px;
         font-size:14px; 
         text-align:left;
         font-family:inherit; 
 
 
+    }
+    .b-search {
+        height: 45px;
+        font-size:14px; 
+        text-align:center;
+        font-family:inherit;  
     }
     .padding-slide-p{
         padding:10px !important; 
@@ -2406,7 +2430,9 @@ input:required, textarea:required {
         font-size: 16px;
         text-align: justify;
     }
-
+    .home-slid{
+        margin-top:110px; 
+    }
 
 
 }
@@ -2673,13 +2699,19 @@ input:required, textarea:required {
     .track-box-paddong {
         padding: 24px 5px !important;
     }
-    .search,.b-search {
+    .search{
         height: 45px;
         font-size:16px; 
         text-align:left;
         font-family:inherit; 
 
 
+    }
+    .b-search {
+        height: 45px;
+        font-size:16px; 
+        text-align:center;
+        font-family:inherit; 
     }
     .padding-slide-p{
         padding:10px !important; 
@@ -2746,7 +2778,9 @@ input:required, textarea:required {
         padding: 100px 0 50px !important;
     }
 
-
+    .home-slid {
+        margin-top: 119px;
+    }
 
 }
 @media(min-width:800px){
@@ -2953,13 +2987,19 @@ input:required, textarea:required {
     .track-box-paddong {
         padding: 24px 5px !important;
     }
-    .search,.b-search {
+    .search{
         height: 45px;
         font-size:15px; 
         text-align:left !important;
         font-family:inherit; 
 
 
+    }
+    .b-search {
+        height: 45px;
+        font-size:15px; 
+        text-align:center !important;
+        font-family:inherit;   
     }
     .padding-slide-p{
         padding:10px !important; 
@@ -3009,6 +3049,9 @@ input:required, textarea:required {
     .padding-why-cntnt{
         padding:23px !important; 
     } 
+    .home-slid {
+        margin-top: 126px;
+    }
 
 }
 @media(min-width:980px){
@@ -3208,6 +3251,9 @@ input:required, textarea:required {
         width:25% !important; 
 
     }
+    .home-slid {
+        margin-top: 126px;
+    }
 }
 @media(min-width:1280px){
     .services {
@@ -3219,6 +3265,7 @@ input:required, textarea:required {
 
 
     .service-head h2 {
+        color: #ffffff !important;
         font-size: 45px !important;
         font-weight: 700;
         text-align: center;
@@ -3226,12 +3273,12 @@ input:required, textarea:required {
 
 
 
-    .service-head p{
-        text-align:center;
-        font-size:23px !important;;
-        line-height:34px !important;;
-        margin-top:18px; 
-
+    .service-head p {
+        color: #ffffff !important;
+        font-size: 26px !important;
+        line-height: 34px !important;
+        margin-top: 18px;
+        text-align: center !important;
     }
 
     .service-top{
@@ -3438,15 +3485,16 @@ input:required, textarea:required {
     .padding-scn{
         padding:60px 8px !important; 
     }
+
     .about-us-cntnt h1 {
-        font-size: 39px;
+        font-size: 28px;
         font-weight: 500;
-        line-height: 61px;
+        line-height: 85px;
     }
     .about-us-cntnt p {
-        font-size: 26px;
-        line-height: 45px;
-        padding: 7px 17px 10px !important;
+        font-size: 22px;
+        line-height: 40px;
+        padding: 40px 15px 70px;
     }
     /*    home-page*/
     .side-top-head{
@@ -3524,6 +3572,9 @@ input:required, textarea:required {
     }
     .section-pad{
         padding: 100px 50px 50px 50px !important;
+    }
+    .home-slid {
+        margin-top: 135px;
     }
 }
 @media(min-width:1920px){
