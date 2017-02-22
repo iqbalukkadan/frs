@@ -62,86 +62,87 @@
                 <div class="box-header with-border">
                     <h3 class="box-title">Add Consignment</h3>
                 </div>
-                <form id="consignment-form" method="post" action="<?php echo BASE_URL ?>/consignment/addConsignment">
+                <?php foreach ($consiDetailsById as $row){ ?>
+                <form id="consignmentEdit-form" method="post" action="<?php echo BASE_URL ?>/consignment/consiEdit">
                     <div class="box-body">
+                        <input type="hidden" name="id" value="<?php echo $row->consignmentId; ?>">
                         <div class="form-group col-md-3 arrange-input">
                             <label>Bill Number</label>
-                            <input type="text" class="required form-control" name="billnum" data-type="billnum" >
+                            <input value="<?php echo $row->billNumber; ?>" type="text" class="required form-control" name="billnum" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Company Name</label>
-                            <input type="text" class="required form-control" name="name" data-type="billnum" >
+                            <input value="<?php echo $row->companyName; ?>" type="text" class="required form-control" name="name" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Pickup Date</label>
-                            <input id="datepicker" class="required form-control" type="text" name="date">
+                            <input value="<?php echo $row->pickupDate; ?>" id="datepicker" class="required form-control" type="text" name="date">
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Origin</label>
-                            <input type="text" class="required form-control" name="origin" data-type="billnum" >
+                            <input value="<?php echo $row->origin; ?>" type="text" class="required form-control" name="origin" data-type="billnum" >
                         </div>
                         <div class="form-group col-sm-3 arrange-input">
                             <label>Consignee Name</label>
-                            <input type="text" class="required form-control" name="consignee" data-type="billnum" >
+                            <input value="<?php echo $row->consigneeName; ?>" type="text" class="required form-control" name="consignee" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Mode</label>
-                            <input type="text" class="required form-control" name="mode" data-type="billnum" >
+                            <input value="<?php echo $row->mode; ?>" type="text" class="required form-control" name="mode" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Weight</label>
-                            <input type="text" class="required form-control" name="weight" data-type="billnum" >
+                            <input value="<?php echo $row->weight; ?>" type="text" class="required form-control" name="weight" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Destination</label>
-                            <input type="text" class="required form-control" name="destination" data-type="billnum" >
+                            <input value="<?php echo $row->destination; ?>" type="text" class="required form-control" name="destination" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Amount</label>
-                            <input type="text" class="required form-control" name="amount" data-type="billnum" >
+                            <input value="<?php echo $row->amount; ?>" type="text" class="required form-control" name="amount" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Delivery State</label>
-                            <input type="text" class="form-control" name="state" data-type="billnum" >
+                            <input value="<?php echo $row->deliveryState; ?>" type="text" class="form-control" name="state" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Delivery District</label>
-                            <input type="text" class="form-control" name="district" data-type="billnum" >
+                            <input value="<?php echo $row->deliveryDistrict; ?>" type="text" class="form-control" name="district" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Delivery City</label>
-                            <input type="text" class="form-control" name="city" data-type="billnum" >
+                            <input value="<?php echo $row->deliveryCity; ?>" type="text" class="form-control" name="city" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Delivery Pin:</label>
-                            <input type="text" class="form-control" name="pin" data-type="billnum" >
+                            <input value="<?php echo $row->deliveryPin; ?>" type="text" class="form-control" name="pin" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Delivery mobile Number</label>
-                            <input type="text" class="form-control" name="mob" data-type="billnum" >
+                            <input value="<?php echo $row->deliveryMobile; ?>" type="text" class="form-control" name="mob" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Delivery Clint</label>
-                            <input type="text" class="form-control" name="clintName" data-type="billnum" >
+                            <input value="<?php echo $row->deliveryClint; ?>" type="text" class="form-control" name="clintName" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Delivery Home</label>
-                            <input type="text" class="form-control" name="home" data-type="billnum" >
+                            <input value="<?php echo $row->deliveryClintHouse; ?>" type="text" class="form-control" name="home" data-type="billnum" >
                         </div>
                         <div class="form-group col-md-3 arrange-input">
                             <label>Delivery Post</label>
-                            <input type="text" class="form-control" name="post" data-type="billnum" >
+                            <input value="<?php echo $row->deliveryClintPost; ?>" type="text" class="form-control" name="post" data-type="billnum" >
                         </div>
                     </div>
                     <!-- /.box-body -->
 
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">Add Consignment</button>
-                        
-                        <a id="consiId" href='<?php echo BASE_URL ?>/invoice/addInvoice?id=<?php echo $result->data; ?>' class="btn btn-primary">Add Invoice</a>
+                        <button type="submit" class="btn btn-primary">Edit Consignment</button>
                         
                     </div>
                 </form>
+                <?php } ?>
             </div>
         </div>
 

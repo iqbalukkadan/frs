@@ -2,6 +2,9 @@
     max-width: 80%;
     max-height: 80%;
 }
+.error{
+    color: red !important;
+}
 .profile-string-img{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -16,12 +19,35 @@
     padding-bottom: 20px !important;
 }
 .consignment{
-/*   width: 100%;
-   overflow: scroll;*/
+  
+   /*overflow: scroll;*/
 }
 .no-padding-left{
     padding-left: 0px !important;
 }
 .no-padding-right{
     padding-right: 0px !important;
+}
+.consiRow{
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+.consiRow span{
+  margin-bottom: 10px !important;  
+}
+.consignment{
+    margin-top: -30px;
+}
+.consignment button{
+    margin-bottom: 20px;   
+}
+.invoices{
+    width: 100%;
+    overflow: scroll;
+}
+.margin-top{
+    margin-top: 10px;
+}
+.arrange-input{
+    height: 80px !important;
 }

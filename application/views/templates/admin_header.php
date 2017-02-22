@@ -74,7 +74,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- Logo -->
                 <a href="#" class="logo">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
-                    <img src="dist/images/logo/Frs.png">
+                    <img src="<?php echo IMAGEPATH ?>/logo/Frs.png">
                 </a>
 
                 <!-- Header Navbar -->
@@ -102,7 +102,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                 <a href="#">
                                                     <div class="pull-left">
                                                         <!-- User Image -->
-                                                        <img src="<?php echo IMAGEPATH ?>/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                                            
                                                     </div>
                                                     <!-- Message title and timestamp -->
                                                     <h4>
@@ -278,8 +278,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li class="active"><a href="<?php echo BASE_URL ?>/consignment/addConsignment"><i class="fa fa-circle-o"></i> manage</a></li>
-                                <li><a href=""><i class="fa fa-circle-o"></i> update</a></li>
+                                <li class="active"><a href="<?php echo BASE_URL ?>/consignment/addConsignment"><i class="fa fa-circle-o"></i> Add Consignment</a></li>
+                                <li><a href="<?php echo BASE_URL ?>/consignment/manage"><i class="fa fa-circle-o"></i>Manage</a></li>
                             </ul>
                         </li>
                         <li class="active treeview">

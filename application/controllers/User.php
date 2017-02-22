@@ -73,6 +73,7 @@ class User extends CI_Controller {
                     die();
                 }
                 $username = $this->input->post('username', TRUE);
+                
                 $result = $this->UserManage->checkUsername($username);
                 if ($result == TRUE) {
                     $data = array(
@@ -226,6 +227,7 @@ class User extends CI_Controller {
                 $currentUserName = $this->UserManage->selectUsername($userId, $username);
 
                 if ($currentUserName == FALSE) {
+//                    check the username is changed or not
                     $edit = $this->UserManage->userNewDatas($data, $userId);
                     if ($edit == TRUE) {
 

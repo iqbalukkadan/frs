@@ -7,55 +7,46 @@
                 <div class="box-header with-border">
                     <h3 class="box-title">Add Invoice</h3>
                 </div><br><br>
-                <div class="container">
-
-                    <form class="box-body" id="selectBillNum" method="post" action="<?php echo BASE_URL ?>/invoice/consiDetailsById">
-                        <label>CONSIGNMENT BILL NUMBER</label>
-                        <select name="billNum" class="select2" onchange="onchangeBill()">
-                            <?php foreach ($consiDetails as $billNum) { ?>
-                                <option value="<?php echo $billNum->consignmentId ?>"><?php echo $billNum->billNumber ?> --- <?php echo $billNum->pickupDate ?></option>
-                            <?php } ?>
-                        </select>
-                    </form>
-                </div><br><br>
+               
 
                 <?php
-                if (isset($billId)) {
-                    foreach ($consiDetailsById as $consiRow) {
+                
+                    foreach ($invoiceDetails as $consiRow) {
                         ?>
-                        <form id="invoice-form" method="post" action="<?php echo BASE_URL ?>/invoice/addInvoice">
+                        <form id="invoice-edit" method="post" action="<?php echo BASE_URL ?>/invoice/invoiceEdit">
                             <div class="box-body">
+                                <input type="hidden" value="<?php echo $consiRow->invoiceId; ?>" name="id">
                                 <div class="form-group col-md-3 arrange-input">
                                     <label>Invoice Number</label>
-                                    <input type="text" class="required form-control" name="invoicenum" data-type="billnum" >
+                                    <input value="<?php echo $consiRow->invoiceNumber; ?>" type="text" class="required form-control" name="invoicenum" data-type="billnum" >
                                 </div>
                                 <div class="form-group col-md-3 arrange-input">
                                     <label>Consignment Number</label>
-                                    <input value="<?php echo $consiRow->billNumber; ?>" type="text" class="required form-control" name="billnum" data-type="billnum" >
+                                    <input value="<?php echo $consiRow->consignmentNumber; ?>" type="text" class="required form-control" name="billnum" data-type="billnum" >
                                 </div>
                                 <div class="form-group col-md-3 arrange-input">
                                     <label>Origin</label>
-                                    <input type="text" class="required form-control" name="origin" data-type="billnum" >
+                                    <input value="<?php echo $consiRow->origin; ?>" type="text" class="required form-control" name="origin" data-type="billnum" >
                                 </div>
                                 <div class="form-group col-md-3 arrange-input">
                                     <label for="exampleInputEmail1">Invoice Weight</label>
-                                    <input class="required form-control" type="text" name="weight">
+                                    <input value="<?php echo $consiRow->invoiceWeight; ?>" class="required form-control" type="text" name="weight">
                                 </div>
                                 <div class="form-group col-sm-3 arrange-input">
                                     <label>Quantity in pieces</label>
-                                    <input type="text" class="required form-control" name="quantity" data-type="billnum" >
+                                    <input value="<?php echo $consiRow->quantityInPieces; ?>" type="text" class="required form-control" name="quantity" data-type="billnum" >
                                 </div>
                                 <div class="form-group col-md-3 arrange-input">
                                     <label>Destination</label>
-                                    <input type="text" class="required form-control" name="destination" data-type="billnum" >
+                                    <input value="<?php echo $consiRow->destination; ?>" type="text" class="required form-control" name="destination" data-type="billnum" >
                                 </div>
                                 <div class="form-group col-md-3 arrange-input">
                                     <label>Date</label>
-                                    <input id="datepicker" class="required form-control" type="text" name="date">
+                                    <input value="<?php echo $consiRow->date; ?>" id="datepicker" class="required form-control" type="text" name="date">
                                 </div>
                                 <div class="form-group col-md-3 arrange-input">
                                     <label>Amount</label>
-                                    <input type="text" class="required form-control" name="amount" data-type="billnum" >
+                                    <input value="<?php echo $consiRow->amount; ?>" type="text" class="required form-control" name="amount" data-type="billnum" >
                                 </div>
                                 <div class="form-group col-md-3 arrange-input">
                                     <label>Delivery State</label>
@@ -100,7 +91,7 @@
                         </form>
                     <?php
                     }
-                }
+                
                 ?>
 
             </div>

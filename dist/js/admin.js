@@ -39,62 +39,129 @@ $(document).ready(function () {
 
     $("#invoice-form").submit(function (e) {
         e.preventDefault();
-//        var c = validate("#consignment-form");
+        var d = validate("#consignment-form");
+        var url = $(this).attr("action");
+        if (d == true) {
 
-//        if (c == true) {
+            $.ajax({
+                url: url,
+                data: $("#invoice-form").serialize(),
+                type: "post",
+                dataType: "json",
+                success: function (result) {
+                    if (result.result == '100') {
+                        alert("Invoice Added");
+                    }
 
-        $.ajax({
-            url: 'onsignment/addInvoice',
-            data: $("#invoice-form").serialize(),
-            type: "post",
-            dataType: "json",
-            success: function (result) {
+                    server_validate(result, "#invoice-form");
 
-                server_validate(result, "#invoice-form");
-
-            },
-            error: function (result) {
-                $('.form-error').remove();
-                $("#invoice-form").prepend('<div class="form-error">\n\
+                },
+                error: function (result) {
+                    $('.form-error').remove();
+                    $("#invoice-form").prepend('<div class="form-error">\n\
             Some un expectted error occuered\n\
             </div>').slideDown(1000);
-            }
-        });
-//        }
+                }
+            });
+        }
 
     });
+    
+//    invoice edit
+    
+     $("#invoice-edit").submit(function (e) {
+        e.preventDefault();
+        var d = validate("#invoice-edit");
+        var url = $(this).attr("action");
+        if (d == true) {
+
+            $.ajax({
+                url: url,
+                data: $("#invoice-edit").serialize(),
+                type: "post",
+                dataType: "json",
+                success: function (result) {
+                    if (result.result == '100') {
+                        alert("Invoice Edited");
+                    }
+
+                    server_validate(result, "#invoice-edit");
+
+                },
+                error: function (result) {
+                    $('.form-error').remove();
+                    $("#invoice-edit").prepend('<div class="form-error">\n\
+            Some un expectted error occuered\n\
+            </div>').slideDown(1000);
+                }
+            });
+        }
+
+    });
+    
     $("#consignment-form").submit(function (e) {
         e.preventDefault();
-//        var c = validate("#consignment-form");
+        var c = validate("#consignment-form");
 //
-//        if (c == true) {
-        var url = $(this).attr("action");
-        $.ajax({
+        if (c == true) {
+            var url = $(this).attr("action");
+            $.ajax({
 //            url: url,
-            url: window.location.origin + "/frs-courier/consignment/addConsignment",
-            data: $("#consignment-form").serialize(),
-            type: "post",
-            dataType: "json",
-            success: function (result) {
-                $('#consiId').html(result.data);
+                url: window.location.origin + "/frs-courier/consignment/addConsignment",
+                data: $("#consignment-form").serialize(),
+                type: "post",
+                dataType: "json",
+                success: function (result) {
+                    $('#consiId').html(result.data);
 
-                if (result.result == '100') {
-                    alert("Consignment Added");
-                }
-                server_validate(result, "#consignment-form");
-            },
-            error: function (result) {
-                $('.form-error').remove();
-                $("#consignment-form").prepend('<div class="form-error">\n\
+                    if (result.result == '100') {
+                        alert("Consignment Added");
+                    }
+                    server_validate(result, "#consignment-form");
+                },
+                error: function (result) {
+                    $('.form-error').remove();
+                    $("#consignment-form").prepend('<div class="form-error">\n\
             Some un expectted error occuered\n\
             </div>').slideDown(1000);
-            }
-        });
-//        }
+                }
+            });
+        }
 
     });
+    
+//    edit consignment
 
+    $("#consignmentEdit-form").submit(function (e) {
+        e.preventDefault();
+        var c = validate("#consignmentEdit-form");
+//
+        if (c == true) {
+            var url = $(this).attr("action");
+            $.ajax({
+//            url: url,
+                url: window.location.origin + "/frs-courier/consignment/consiEdit",
+                data: $("#consignmentEdit-form").serialize(),
+                type: "post",
+                dataType: "json",
+                success: function (result) {
+                    
 
+                    if (result.result == '100') {
+                        alert("Consignment Updated");
+                    }
+                    server_validate(result, "#consignmentEdit-form");
+                },
+                error: function (result) {
+                    $('.form-error').remove();
+                    $("#consignmentEdit-form").prepend('<div class="form-error">\n\
+            Some un expectted error occuered\n\
+            </div>').slideDown(1000);
+                }
+            });
+        }
+
+    });
 //    user delete
 
     $('body').on('click', '.userDelete', function (e) {
@@ -131,16 +198,17 @@ $(document).ready(function () {
     $("#userInsert").submit(function (e) {
         e.preventDefault();
         var b = validate("#userInsert");
+        var url = $(this).data('url');
         if (b == true) {
             $.ajax({
-                url: 'user/create',
+                url: url,
                 data: $("#userInsert").serialize(),
                 type: "post",
                 dataType: "json",
                 success: function (result) {
 
                     if (result.result == "201") {
-                        alert("Created Success");
+                        alert("User Created");
 
                     }
 

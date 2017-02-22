@@ -8,7 +8,7 @@
                 <div class="box-header with-border">
                     <h3 class="box-title">Create User</h3>
                 </div>
-                <form id="userInsert" action="<?php echo BASE_URL . 'user/create' ?>" role="form" method="post">
+                <form id="userInsert" action="<?php echo BASE_URL ?>/user/create" role="form" method="post">
                     <div class="box-body">
                         <div class="form-group col-md-6 no-padding-left">
                             <label>Name</label>
