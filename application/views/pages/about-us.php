@@ -1,5 +1,5 @@
 <!--about us-->
-<section class="abot-us-scn home-slider">
+<section class="abot-us-scn home-slid">
     <div class="about-us-rgba  padding-scn">
     <div class="container-fluid no-padding">
         <div class="container about-us-head no-padding">
